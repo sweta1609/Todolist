@@ -16,7 +16,7 @@ hr{
 
 /* to do list outer box */
 .container{
-    height:auto;
+    max-height:70vh;
     width:600px;
     background-color: white;
     box-shadow:2px 2px 10px 5px rgb(29, 29, 29);
@@ -26,6 +26,8 @@ hr{
     overflow-y: scroll;
     overflow-x: hidden;
 }
+
+
 
 .input-icons img{
     position:relative;
