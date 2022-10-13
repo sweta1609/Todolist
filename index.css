@@ -1,11 +1,14 @@
 body{
     background-color: rgba(200, 201, 200, 0.759);
+    background-image: url(https://media.istockphoto.com/photos/to-do-list-picture-id1293850746?b=1&k=20&m=1293850746&s=170667a&w=0&h=-U81sV0dSXTFfGnyMakG5PMyiGTHaPIqFvLv_1zGN2k=);
 }
 
 #title-todolist{
-    margin-left: 45%;
+    margin-left: 40%;
     margin-top:20px;
     font-family: 'Courier New', Courier, monospace;
+    color:rgb(247, 241, 241);
+   
 }
 
 hr{
@@ -16,17 +19,21 @@ hr{
 
 /* to do list outer box */
 .container{
-    max-height:70vh;
+    max-height:90vh;
     width:600px;
     background-color: white;
     box-shadow:2px 2px 10px 5px rgb(29, 29, 29);
     position: relative;
     margin-left: 30%;
     border-radius: 5px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    margin-top:-15px;
+  
 }
 
+/* .container::-webkit-scrollbar {
+    display: none;
+    overflow: hidden;
+} */
 
 
 .input-icons img{
@@ -151,6 +158,14 @@ hr{
 }
 /* ADDING STYLE TO LIST TASKS */
 
+#lists-div{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height:40vh;
+    margin-top:-35px;
+
+}
+
 /* creating container for all list task */
 .list-task{
     display:flex;
@@ -161,6 +176,9 @@ hr{
     margin-left:5px;
     border-radius: 5px;
     box-shadow:1px 1px 1px 1px grey;
+    margin-top:25px;
+   
+  
 }
 
 
@@ -201,50 +219,40 @@ hr{
     background-color: rgb(201, 196, 196);
 }
 
+
+
+
 @media only screen and (max-width: 768px){
+   
 
-    .container{
-        height:auto;
-        width:550px;
-        margin-left:30px;
-    }
-    .filter-options{
-        margin-left:310px;
-    }
-    .list-task{
-        width:450px;
-    }
-    
-}
-
-@media only screen and (max-width: 600px){
 
     .container{
         height:auto;
         width:400px;
         margin-left:30px;
     }
-    #completedtask{
-        margin-left:2%;
+    .filter-options{
+        margin-left:310px;
     }
     #clearcompleted{
-        margin-left:100px;
-    }
-    .filter-options{
-        margin-left:170px;
-    }
+        margin-left:50px;
+    } 
     .list-task{
         width:300px;
     }
     
 }
 
-
 @media only screen and (max-width:900px){
+    #title-todolist{
+        margin-left: 30%;   
+    }
     .container{
         
-        margin-left:60px;
+        margin-left:40px;
 
     }
 }
  
+
+

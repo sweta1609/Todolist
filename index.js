@@ -112,6 +112,7 @@
         let currenTask = newTasks[0]
         currenTask.completed = !currenTask.completed
         renderList()
+        
         if(currenTask.completed ){
             showNotification("Task checked successfully")
         }else{
