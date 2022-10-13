@@ -1,0 +1,43 @@
+<html>
+   <main>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/30da7cb109.js" crossorigin="anonymous"></script>
+
+   </main> 
+   <body>
+      <h2 id="title-todolist">To do list</h2>
+      <hr>
+      <!-- Entire to do list container -->
+      <section class="container">
+         <!-- form consisiting of input and add button -->
+         <form class="input-icons">
+            <input placeholder="Type Your To Do Task" id="inputtask"> <i class="fa fa-plus-circle onhover" id="add"></i>
+
+         </form>
+         <span id="completedtask"><i class="fa fa-check-double"></i>&ensp;<span id="allcompleted">Complete all task</span><span id="clearcompleted">Clear completed</span></span>
+         <hr>
+         <div id="lists-div">
+            <h4 id="notask">No TODO Items.</h4>
+             <!--list for displaying todo items-->
+            <ul id="list-container">
+            </ul>
+         </div>
+         <hr>
+         <!-- for keeping track of total task -->
+         <div id=total-task>
+            <span id="taskcount">&ensp;0 </span>&ensp;<span>Task Left</span>
+         </div>
+         <!-- keeping track of completed,uncompleted and all task in to do list -->
+         <div class="filter-options">
+            <span id="all" class="onhover">All</span>
+            <span id="uncomplete" class="onhover">Uncomplete</span>
+            <span id="completed" class="onhover">Completed</span>
+        </div>
+
+      </section>
+
+   
+    <script src="index.js"></script>
+   </body>
+</html>
