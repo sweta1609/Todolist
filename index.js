@@ -123,7 +123,7 @@
     }
 
     // handling all completed option
-    function markAllCompleted(event){
+    function markAllCompleted(){
         let markCompleted = tasks.filter(task=>task.completed === false)
         for(let x of markCompleted){
             x.completed = true;
