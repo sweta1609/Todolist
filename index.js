@@ -8,6 +8,7 @@
     const notodoText = document.getElementById('notask')
     const taskList = document.getElementById('list-container')
     const totalTask = document.getElementById('taskcount')
+    let listTask = document.getElementsByClassName('list-task')
  
     
     //for  showing notification
@@ -121,11 +122,12 @@
     }
 
     // handling all completed option
-    function markAllCompleted(){
+    function markAllCompleted(event){
         let markCompleted = tasks.filter(task=>task.completed === false)
         for(let x of markCompleted){
             x.completed = true;
         }
+    
         renderList()
      
     }
@@ -214,6 +216,7 @@
         else if(target.id === "allcompleted"){
             markAllCompleted()
             // handling style
+         
             allcompleted.style.color='black'
             allcompleted.style.fontWeight ="600";   
             clearcompleted.style.fontWeight ="50";
